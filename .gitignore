@@ -1,0 +1,72 @@
+# ----------------------------------------------------------------------
+# Core Rails / General Ignores
+# ----------------------------------------------------------------------
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore all environment files (e.g., .env.development, .env.test, etc.)
+/.env*
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore pidfiles, but keep the directory.
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
+
+# ----------------------------------------------------------------------
+# Database / Storage
+# ----------------------------------------------------------------------
+
+# Ignore SQLite databases (even if using Postgres, this is a good safety net)
+/db/*.sqlite3
+
+# Ignore Active Storage (uploaded files in development)
+/storage/*
+!/storage/.keep
+/tmp/storage/*
+!/tmp/storage/
+!/tmp/storage/.keep
+
+# ----------------------------------------------------------------------
+# Assets & Dependency Output
+# ----------------------------------------------------------------------
+
+# Compiled/Generated Assets (Webpacker, Propshaft, Vite, etc.)
+/public/assets
+/public/packs
+/public/vite
+
+# JavaScript/Node Dependencies
+/node_modules
+
+# Gem dependencies installed locally or via vendor
+/vendor/bundle
+
+# ----------------------------------------------------------------------
+# Secrets / Credentials
+# ----------------------------------------------------------------------
+
+# Ignore master key for decrypting credentials
+/config/master.key
+
+# Ignore development/test credentials that are NOT encrypted
+/config/credentials/development.key
+/config/credentials/test.key
+
+# ----------------------------------------------------------------------
+# IDE & System Files
+# ----------------------------------------------------------------------
+
+# RubyMine/IntelliJ
+/.idea/
+
+# Common Editor/System Junk
+*.swp
+*~
+.DS_Store
